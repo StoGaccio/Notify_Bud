@@ -1,0 +1,4 @@
+spotipy
+yagmail
+python-dotenv
+time
