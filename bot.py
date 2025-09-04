@@ -27,3 +27,9 @@ yag = yagmail.SMTP(os.getenv("GMAIL_USER"), os.getenv("GMAIL_PASS"))
 def send_email(new_releases):
     body = "Ecco le nuove uscite:\n" + "\n".join(new_releases)
     yag.send(to="leonardogaccioli@gmail.com", subject="Nuove uscite Spotify", contents=body)
+import time
+
+while True:
+    # codice per controllare nuove uscite
+    print("Controllo completato...")
+    time.sleep(86400)  # aspetta 24 ore
